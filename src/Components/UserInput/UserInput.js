@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import App from "../../App";
 
-const UserInput = () => {
+const UserInput = (props) => {
 
     const initialUserInput = {
         'current-savings': 10000,
@@ -15,6 +16,8 @@ const UserInput = () => {
     const submissionHandler = (event) => {
         event.preventDefault();
         console.log('Submit button');
+        console.log(userInput);
+        props.onSendCalculations(userInput);
     };
 
     const resetHandler = () => {
