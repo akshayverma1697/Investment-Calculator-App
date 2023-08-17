@@ -12,8 +12,8 @@ const UserInput = () => {
     };
 
     const inputChangeHandler = (input, value) => {
-
-    }
+        console.log('inputChangeHandler: ', input, value);
+    };
 
     return (
         <form onSubmit={submissionHandler} className="form">
