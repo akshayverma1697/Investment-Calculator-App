@@ -1,4 +1,4 @@
-import logo from './assets/investment-calculator-logo.png';
+import Header from "./Components/Header/Header";
 
 function App() {
   const calculateHandler = (userInput) => {
@@ -30,10 +30,7 @@ function App() {
 
   return (
     <div>
-      <header className="header">
-        <img src={logo} alt="logo" />
-        <h1>Investment Calculator</h1>
-      </header>
+      <Header/>
 
       <form className="form">
         <div className="input-group">
